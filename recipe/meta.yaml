@@ -1,13 +1,13 @@
 {% set name = "knoten" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/USGS-Astrogeology/knoten/archive/{{ version }}.tar.gz
-  sha256: 5dd53c61a768bdfd90be3a56b0bfc9c214c1fc8ec43c789aa92866a4e9b45cd9
+  url: https://github.com/DOI-USGS/knoten/archive/{{ version }}.tar.gz
+  sha256: 6bb833a2eebcbce9e33d4ba843e235e180c66678537368a868cbc21f3e850d3d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -41,11 +41,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/USGS-Astrogeology/knoten
+  home: https://github.com/DOI-USGS/knoten
   summary: 'A library to leverage python wrapped Community Sensor Models (CSMs) for common spatial/sensor operations and testing.'
   description: 'Basic python tools for CSM camera models'
-  doc_url: https://github.com/USGS-Astrogeology/knoten#readme
-  dev_url: https://github.com/USGS-Astrogeology/knoten
+  doc_url: https://github.com/DOI-USGS/knoten#readme
+  dev_url: https://github.com/DOI-USGS/knoten
   license: CC0-1.0
   license_file: LICENSE.md
 
